@@ -1,0 +1,34 @@
+@use '../../styles/tokens';
+
+.group {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sds-size-space-200);
+  padding: 0 var(--content-padding-x);
+  overflow-x: auto;
+  flex-shrink: 0;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tag {
+  flex-shrink: 0;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  background-color: var(--sds-color-background-brand-tertiary);
+  color: var(--sds-color-text-brand-tertiary);
+  border: none;
+
+  &.active {
+    background-color: var(--sds-color-background-brand-default);
+    color: var(--sds-color-text-brand-on-brand);
+  }
+}

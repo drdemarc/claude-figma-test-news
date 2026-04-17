@@ -1,0 +1,26 @@
+@use '../../styles/tokens';
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--content-padding-x);
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.time {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-status-bar);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-status-bar-text);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-status-bar-text);
+  font-size: 13px;
+  font-weight: var(--font-weight-semibold);
+}

@@ -1,0 +1,33 @@
+@use '../../styles/tokens';
+
+.meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 0 var(--content-padding-x);
+}
+
+.publisher {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-publisher);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-publisher);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+.separator {
+  color: var(--color-timestamp);
+  font-size: var(--font-size-timestamp);
+}
+
+.timestamp {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-timestamp);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-timestamp);
+  white-space: nowrap;
+}

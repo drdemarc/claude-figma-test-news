@@ -1,0 +1,16 @@
+@use 'tokens';
+@use 'reset';
+@use 'typography';
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-page-bg);
+  color: var(--sds-color-text-default-default);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

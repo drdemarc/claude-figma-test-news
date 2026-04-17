@@ -1,0 +1,90 @@
+// Design tokens extracted from Figma SDS via get_design_context
+// Source: file r1ujwOuoedDS8wUKoyBE9L, nodes 41:2 (Phone Shell) and 41:4 (Scroll Content)
+
+:root {
+  // SDS color tokens
+  --sds-color-background-brand-default: #2c2c2c;
+  --sds-color-background-brand-tertiary: #f5f5f5;
+  --sds-color-text-brand-on-brand: #f5f5f5;
+  --sds-color-text-brand-tertiary: #757575;
+  --sds-color-background-default-default: #ffffff;
+  --sds-color-border-default-default: #d9d9d9;
+  --sds-color-text-default-default: #1e1e1e;
+  --sds-color-text-default-secondary: #757575;
+
+  // SDS typography tokens
+  --sds-typography-body-font-family: Inter, sans-serif;
+  --sds-typography-body-size-medium: 16px;
+  --sds-typography-body-font-weight-regular: 400;
+  --sds-typography-heading-font-family: Inter, sans-serif;
+  --sds-typography-heading-size-base: 24px;
+  --sds-typography-heading-font-weight: 600;
+
+  // SDS spacing tokens
+  --sds-size-space-200: 8px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-600: 24px;
+  --sds-size-radius-200: 8px;
+  --sds-size-stroke-border: 1px;
+
+  // App-specific semantic tokens derived from Figma design context
+  --color-page-bg: #f7f7f7;
+  --color-phone-shell: #1f1f1f;
+  --color-phone-border: #333333;
+  --color-screen-bg: #f7f7f7;
+
+  --color-status-bar-text: #1a1a1a;
+  --color-page-title: #141414;
+  --color-page-date: #737373;
+  --color-publisher: #4d4dcc;
+  --color-timestamp: #8c8c8c;
+  --color-image-placeholder: #ccd1d9;
+
+  --color-divider: #e5e5e5;
+
+  --font-family-base: Inter, sans-serif;
+
+  --font-size-status-bar: 15px;
+  --font-size-page-title: 28px;
+  --font-size-page-date: 14px;
+  --font-size-publisher: 12px;
+  --font-size-timestamp: 12px;
+  --font-size-card-heading: 16px;
+  --font-size-card-body: 14px;
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-page-title: 34px;
+
+  --phone-shell-radius: 52px;
+  --phone-shell-border-width: 3px;
+  --phone-screen-radius: 40px;
+  --phone-width: 430px;
+  --phone-height: 932px;
+  --screen-width: 390px;
+  --screen-height: 844px;
+  --screen-offset-x: 17px;
+  --screen-offset-y: 41px;
+
+  --article-image-size: 100px;
+  --article-gap: 16px;
+  --article-margin-bottom: 32px;
+  --content-padding-x: 16px;
+  --card-padding: 16px;
+  --card-radius: var(--sds-size-radius-200);
+  --card-border-color: var(--sds-color-border-default-default);
+}
+
+// SCSS variable aliases for use in .module.scss files
+$color-page-bg: var(--color-page-bg);
+$color-phone-shell: var(--color-phone-shell);
+$color-phone-border: var(--color-phone-border);
+$color-page-title: var(--color-page-title);
+$color-page-date: var(--color-page-date);
+$color-publisher: var(--color-publisher);
+$color-timestamp: var(--color-timestamp);
+$color-image-placeholder: var(--color-image-placeholder);
+$color-divider: var(--color-divider);
+$font-family-base: var(--font-family-base);

@@ -1,0 +1,29 @@
+// Typography scale — mapped from Figma SDS resolved values
+.text-page-title {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-page-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-page-title);
+  color: var(--color-page-title);
+}
+
+.text-page-date {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-page-date);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-page-date);
+}
+
+.text-publisher {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-publisher);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-publisher);
+}
+
+.text-timestamp {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-timestamp);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-timestamp);
+}

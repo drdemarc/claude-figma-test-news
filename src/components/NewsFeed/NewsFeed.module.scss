@@ -1,0 +1,77 @@
+@use '../../styles/tokens';
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-screen-bg);
+  overflow: hidden;
+  position: relative;
+}
+
+.scrollArea {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scrollContent {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.header {
+  padding: 16px var(--content-padding-x) 12px;
+  flex-shrink: 0;
+}
+
+.pageTitle {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-page-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-page-title);
+  color: var(--color-page-title);
+}
+
+.pageDate {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-page-date);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-page-date);
+  margin-top: 2px;
+}
+
+.filterRow {
+  padding-bottom: 12px;
+}
+
+.dividerFull {
+  height: 1px;
+  background-color: var(--color-divider);
+  margin-bottom: 16px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.state {
+  padding: 40px var(--content-padding-x);
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  color: var(--sds-color-text-default-secondary);
+  text-align: center;
+}
+
+.error {
+  color: #c0392b;
+}
