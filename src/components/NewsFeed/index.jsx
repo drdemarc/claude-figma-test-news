@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './NewsFeed.module.scss';
-import StatusBar from '../StatusBar';
 import TagToggleGroup from '../TagToggle';
 import ArticleCard from '../ArticleCard';
 import { useNews } from '../../hooks/useNews';
@@ -29,8 +28,6 @@ export default function NewsFeed() {
 
   return (
     <div className={styles.screen}>
-      <StatusBar />
-
       <div className={styles.scrollArea}>
         <div className={styles.scrollContent}>
           <div className={styles.header}>
